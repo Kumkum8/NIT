@@ -1,0 +1,104 @@
+ /* Custom CSS */
+
+body{
+font-family:Livvic, sans-serif;
+
+}
+
+        /* First (White) Navbar */
+        .top-navbar {
+            background-color: white;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .top-navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-navbar a {
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* Hide the top navbar on mobile */
+        @media (max-width: 768px) {
+            .top-navbar {
+                display: none;
+            }
+        }
+
+        /* Second (Blue) Navbar */
+        .navbar {
+            background-color: #2f4173;
+            padding: 10px 0;
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url('images/business-people-working-in-the-office-scaled.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            min-height: 600px;
+        }
+        .hero-section h1 {
+            font-size: 5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+        }
+
+        /* Services Section */
+        .services {
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            padding: 0 15px;
+           
+          
+        }
+        .services .card {
+            border: none;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            
+        }
+        .services .card img {
+            width: 50px;
+            margin-bottom: 15px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            /* Navbar adjustments */
+            .navbar-nav .nav-link {
+                color: #000 !important;
+                font-weight: normal;
+            }
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            .services {
+                position: static;
+                transform: none;
+                bottom: auto;
+                left: auto;
+                padding: 30px 0;
+            }
+        }
